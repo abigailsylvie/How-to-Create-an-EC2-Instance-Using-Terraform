@@ -59,7 +59,7 @@ To spin up multiple instances, modify your `ec2.tf` file:
 ```hcl
 resource "aws_instance" "example" {
   count         = 3
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "# Replace with a valid AMI ID"
   instance_type = "t2.micro"
 }
 ```
