@@ -16,9 +16,9 @@ This project shows step by step how to create and manage an **AWS EC2 instance**
  └── README.md      # Project documentation
 ```
 
-## ⚙️ Setup and Deployment
+## ⚙ Setup and Deployment
 
-### 1️⃣ **Initialize Terraform**
+### 1️ **Initialize Terraform**
 First, create a `provider.tf` file and define the AWS provider:
 ```hcl
 provider "aws" {
@@ -30,7 +30,7 @@ Now, run the following command to initialize Terraform:
 tf init
 ```
 
-### 2️⃣ **Define an EC2 Instance**
+### 2️ **Define an EC2 Instance**
 Create an `ec2.tf` file and add the following code:
 ```hcl
 resource "aws_instance" "example" {
@@ -43,7 +43,7 @@ Validate your code before execution:
 tf validate
 ```
 
-### 3️⃣ **Plan and Apply Changes**
+### 3️ **Plan and Apply Changes**
 To preview the resources Terraform will create, run:
 ```sh
 tf plan
@@ -54,7 +54,7 @@ tf apply
 ```
 Confirm the action when prompted, and Terraform will create your EC2 instance. 🎉
 
-### 4️⃣ **Creating Multiple Instances**
+### 4️ **Creating Multiple Instances**
 To spin up multiple instances, modify your `ec2.tf` file:
 ```hcl
 resource "aws_instance" "example" {
@@ -72,7 +72,7 @@ tf apply
 ```
 Terraform will now provision **3 instances** instead of one.
 
-### 5️⃣ **Destroying the Infrastructure**
+### 5️ **Destroying the Infrastructure**
 When you're done, clean up the resources by running:
 ```sh
 tf destroy
@@ -84,5 +84,5 @@ This will **terminate all instances** created via Terraform. No need for manual 
 - [AWS EC2 Documentation](https://docs.aws.amazon.com/ec2/index.html)
 
 ---
-🚀 **First time using Terraform?** Don't worry! This project is a great way to start. If you have any questions, feel free to reach out. Happy coding! 😊
+**First time using Terraform?** Don't worry! This project is a great way to start. If you have any questions, feel free to reach out. 
 
