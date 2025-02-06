@@ -1,20 +1,18 @@
-# 🚀 Deploying an EC2 Instance with Terraform
+#  Deploying an EC2 Instance with Terraform
 
-## 📌 Overview
-This project demonstrates how to create and manage an **AWS EC2 instance** using **Terraform**, an Infrastructure as Code (IaC) tool. Instead of manually provisioning resources via the AWS Console, Terraform allows us to automate the process efficiently.
+##  Overview
+This project show step by step how to create and manage an **AWS EC2 instance** using **Terraform**.Instead of manually provisioning resources via the AWS console, Terraform allows us to automate the process efficiently.
 
-## 🛠 Prerequisites
-Before getting started, ensure you have:
+##  Prerequisites
 - **Visual Studio Code** (or any preferred code editor)
 - **Terraform** installed on your machine
 - **An AWS Account** with necessary permissions
 
-## 📂 Project Structure
+##  Project Structure
 ```
-📂 terraform-ec2
+ terraform-ec2
  ├── provider.tf   # AWS provider configuration
  ├── ec2.tf        # EC2 instance configuration
- ├── variables.tf  # (Optional) Variables for reusability
  └── README.md      # Project documentation
 ```
 
@@ -36,7 +34,7 @@ tf init
 Create an `ec2.tf` file and add the following code:
 ```hcl
 resource "aws_instance" "example" {
-  ami           = "ami-0c55b159cbfafe1f0" # Replace with a valid AMI ID
+  ami           = " # Replace with a valid AMI ID"
   instance_type = "t2.micro"
 }
 ```
@@ -81,13 +79,7 @@ tf destroy
 ```
 This will **terminate all instances** created via Terraform. No need for manual deletion! 🧹
 
-## ✨ Why Use Terraform?
-✅ **Automation:** No need to manually click through the AWS Console.
-✅ **Scalability:** Easily modify the instance count as needed.
-✅ **Version Control:** Track infrastructure changes with Git.
-✅ **Consistency:** Deploy the same setup across multiple environments.
 
-## 🔗 Additional Resources
 - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
 - [AWS EC2 Documentation](https://docs.aws.amazon.com/ec2/index.html)
 
