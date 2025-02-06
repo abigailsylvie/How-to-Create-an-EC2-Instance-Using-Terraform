@@ -1,4 +1,4 @@
-#  Deploying an EC2 Instance with Terraform
+# How to Create an EC2 Instance Using Terraform
 
 ##  Overview
 This project shows step by step how to create and manage an **AWS EC2 instance** using **Terraform**.Instead of manually provisioning resources via the AWS console, Terraform allows us to automate the process efficiently.
